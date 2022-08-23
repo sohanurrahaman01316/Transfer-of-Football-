@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select your favourite player</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="images/header.png" alt="" />
+      </div>
+      <div>
+        <h1>Choose your favourite player !</h1>
+        <p>
+          As long as professional tennis has existed, fans have followed top players on and off the court. Some select a favorite player who looks like them. Others select a favorite player who plays like them. Roger Federer and Serena Williams are often top choices for both fans and fellow players..
+        </p>
+      </div>
+      <div><img src="images/Card-psg.png" alt=""></div>
+    </header>
+    <section class="all-wrapper">
+      <main class="players">
+        <div class="player">
+          <img src="images/player2.jpg" alt="" />
+          <div class="player-text">
+            <h2 id="playerNameMessi">Messi</h2>
+            <small> 36 goals - 120 assist</small>
+            <button id="select_button">Select</button>
+          </div>
+        </div>
+        <div class="player">
+          <img src="images/player7.jpg" alt="" />
+          <div class="player-text">
+            <h2 id="playerNameRaihan">Neymar</h2>
+            <small> 36 goals - 120 assist</small>
+            <button id="select_buttonRaihan">Select</button>
+          </div>
+        </div>
+        <div class="player">
+          <img src="images/player3.jpeg" alt="" />
+          <div class="player-text">
+            <h2 id="playerNameMbappe">M-bappe</h2>
+            <small> 36 goals - 120 assist</small>
+            <button id="player_select_btn_mbappe">Select</button>
+          </div>
+        </div>
+        <div class="player">
+          <img src="images/player4.jpg" alt="" />
+          <div class="player-text">
+            <h2 id="playerNameOzil">Ozil</h2>
+            <small> 36 goals - 120 assist</small>
+            <button id="player_select_btn_ozil">Select</button>
+          </div>
+        </div>
+        <div class="player">
+          <img src="images/player5.jpg" alt="" />
+          <div class="player-text">
+            <h2 id="playerNamePele">Pele</h2>
+            <small> 36 goals - 120 assist</small>
+            <button id="player_select_btn_pele">Select</button>
+          </div>
+        </div>
+        <div class="player">
+          <img src="images/player6.jpg" alt="" />
+          <div class="player-text">
+            <h2 id="playerNameDibala">Dibala</h2>
+            <small> 36 goals - 120 assist</small>
+            <button id="player_select_btn_dibala">Select</button>
+          </div>
+        </div>
+      </main>
+
+      <div class="select-and-calc">
+        <section class="select-five">
+          <ol id="pushing_player_name">
+            <h2>Select - <span id="select_players_count">0</span></h2>
+            <hr />
+          </ol>
+        </section>
+
+        <section class="calculation">
+          <h2>Budget</h2>
+          <hr />
+          <h3>
+            <span>Per player :</span>
+            <input type="text" id="per_player" placeholder="Per player cost" />
+          </h3>
+          <button id="calculate_per_player">Calculate</button>
+          <p class="exponse">
+            player Expense : $<span id="player_expense">0</span>
+          </p>
+          <h3>
+            Manager :
+            <input type="text" id="manager_cost" placeholder="Manager Cost" />
+          </h3>
+          <h3>
+            Coach :
+            <input type="text" id="coach_cost" placeholder="Coach Cost" />
+          </h3>
+          <button id="calculate_total">Calculate Total</button>
+          <h1>Total : $<span id="total">0</span></h1>
+        </section>
+      </div>
+    </section>
+    <footer>
+      <hr />
+      <p>Copyright &copy; 2022 All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/selectPlayer.js"></script>
+    <script src="js/playerCost.js"></script>
+  </body>
+</html>

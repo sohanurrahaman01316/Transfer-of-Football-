@@ -1,0 +1,190 @@
+body {
+  background: rgb(24, 23, 23);
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  margin-bottom: 30px;
+  padding: 0 30px;
+}
+
+header h1{
+  font-size: 40px;
+  color: #ff5200;
+}
+
+header p{
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(156, 151, 151);
+}
+
+header img{
+  width: 100%;
+}
+
+.player {
+  border: 1px solid rgb(68, 65, 65);
+  /* width: 200px; */
+  text-align: center;
+}
+.player img {
+  height: 150px;
+  width: 100%;
+}
+
+.player h2 {
+  margin: 0;
+  color: rgb(230, 223, 223);
+  padding: 5px 0px;
+}
+.player small {
+  color: rgb(218, 209, 209);
+}
+.player-text {
+  background: #0d0d0d;
+  margin-top: -5px;
+}
+
+.player button {
+  outline: none;
+  padding: 8px 30px;
+  background-color: #2271b6;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin: 10px 0px;
+  font-size: 17px;
+  width: 90%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.player button:hover {
+  background: #024681;
+}
+
+.select-five {
+  background: #0d0d0d;
+  padding: 15px 0;
+  margin: 20px 0;
+}
+
+.select-five h2 {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+.select-five hr {
+  width: 100px;
+  border: 2px solid rgb(255, 54, 4);
+  border-radius: 5px;
+}
+
+.playerItem {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 2px 0;
+}
+
+.calculation {
+  background: #0d0d0d;
+  padding: 15px;
+}
+
+.calculation h2 {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+.calculation hr {
+  width: 100px;
+  border: 2px solid rgb(255, 54, 4);
+  border-radius: 5px;
+}
+
+.calculation input {
+  border: 1px solid white;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+  border-radius: 2px;
+  color: white;
+}
+
+.calculation h3,
+p,
+h1 {
+  color: white;
+}
+.calculation button {
+  outline: none;
+  padding: 8px 30px;
+  background-color: #2271b6;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 17px;
+  width: 250px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.calculation button:hover {
+  background-color: #105999;
+}
+
+footer {
+  background: #151515;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 30px 0;
+}
+footer p {
+  margin-top: 20px;
+}
+
+/* .all-wrapper{
+  display: grid;
+  grid-template-columns:60% 35%;
+} */
+
+.players {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-and-calc {
+  margin: 0 auto;
+  width:330px;
+}
+
+.exponse{
+  font-size: 22px;
+}
+
+@media screen and (max-width:1000px) {
+    header{
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content:flex-start;
+    }  
+
+    header img{
+      width: 300px;
+    }
+}
+
+/* @media screen and (max-width:1000px) { */
